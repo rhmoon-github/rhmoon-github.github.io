@@ -1,21 +1,40 @@
----
-layout: page
----
 
-{% unless page.content == '' %}
-  {{ content }}
-{% endunless %}
+<!-- Category Layout Start -->
 
-<ul class="posts-list">
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
-        </a>
-      </h3>
-    </li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <section class="container content-section text-center">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+
+          {% assign category = page.title %}
+
+          <h3 id="#{{ category }}">Category: {{ category }}</h3>
+
+          <div>
+            {% for post in site.posts %}
+              {% if post.category == category %}
+                {% include post-list.html%}
+              {% endif %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Category Layout End -->

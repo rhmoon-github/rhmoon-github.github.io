@@ -1,168 +1,98 @@
-# Hydeout
+# { Personal } Jekyll Theme
+![Build Status](https://travis-ci.org/le4ker/personal-jekyll-theme.svg?branch=master)
+![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
+[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panossakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Hydeout updates the original [Hyde](https://github.com/poole/hyde)
-theme for [Jekyll](http://jekyllrb.com) 3.x and adds new functionality.
+{ Personal } is a free responsive Jekyll theme, about you :wink:
 
-![Desktop](/_screenshots/1.png?raw=true)
-<img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
-<img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
+You can watch it in action [here](https://le4ker.github.io/personal-jekyll-theme/)!
 
-### Usage
+<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif" height="480">
 
-Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
-Add `gem "jekyll-theme-hydeout", "~> 3.4"` to your Gemfile and run
-`bundle install`.
+<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
 
-If you're installing on Github pages, you may also have to add
-`remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
-instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
+## What value does { Personal } add
 
-Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
-it with an `index.html` that uses the `index` layout:
+* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
+  * Modern and minimal design
+    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
+    * Sweet animations
+    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
+  * Timeline
+    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
+  * White on black text, making the reading experience tireless
+  * Google analytics  
+* Customization and full control of your website and blog through the site config
+* Customization of the website's coloring
+* Blogging functionality
+  * Preview of the latest post in the home page
+  * Archive page
+  * Syntax highlighting
+  * Emojis
+  * Gesture navigation in archive and post pages by swiping
+  * Hashtags
+  * Categories
+  * Disqus comments
+  * Bootstrap share buttons
+  * RSS feed
+* Author blurb under the posts
+* 404 page
+* iOS and Android Web App mode
+* Enforcing of https protocol
+* Protection from email harvesting
+* Sitemap
+* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 
-```
----
-layout: index
-title: Home
----
-```
+## Documentation
 
-You'll also need to add a setting to `_config.yml` telling Jekyll how many posts
-to include per page (e.g. `paginate: 5`).
+The theme contains documentation in the form of [blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
 
-### Keep It Simple
+## How to run locally
 
-In keeping with the original Hyde theme, Hydeout aims to keep the overall
-design lightweight and plugin-free. JavaScript is currently limited only
-to Disqus and Google Analytics (and is only loaded if you provide configuration
-variables).
+First, you need to install jekyll and the dependencies of { Personal } by running:
 
-Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
-the CSS degrades into a single column layout.
-
-### Customization
-
-Hydeout replaces Hyde's class-based theming with the use
-of the following SASS variables:
-
-```scss
-$sidebar-bg-color: #202020 !default;
-$sidebar-fg-color: white !default;
-$sidebar-sticky: true !default;
-$layout-reverse: false !default;
-$link-color: #268bd2 !default;
-```
-
-To override these variables, create your own `assets/css/main.scss` file.
-Define your own variables, then import in Hydeout's SCSS, like so:
-
-```scss
----
-# Jekyll needs front matter for SCSS files
----
-
-$sidebar-bg-color: #ac4142;
-$link-color: #ac4142;
-$sidebar-sticky: false;
-@import "hydeout";
+```shell
+./scripts/install
 ```
 
-See the [_variables](_sass/hydeout/_variables.scss) file for other variables
-you can override.
+Then, you can build and serve your website by simply running:
 
-You can see the full set of partials you can replace in the
-[`_includes`](_includes) folder, but there are a few worth noting:
+```shell
+./scripts/serve-production
+```
 
-* `_includes/copyright.html` - Insert your own copyright here.
+To serve across lan (requires su to forward the port 4000 over lan):
 
-* `_includes/custom-head.html` - Insert custom head tags (e.g. to load your
-  own stylesheets)
+```shell
+./scripts/serve-lan-production
+```
 
-* `_includes/custom-foot.html` - Insert custom elements at the end of the
-  body (e.g. for custom JS)
+### Docker
 
-* `_includes/custom-nav-links.html` - Additional nav links to insert at the
-  end of the list of links in the sidebar.
+Run using Docker:
 
-  Pro-tip: The `nav`s in the sidebar are flexboxes. Use the `order` property
-  to order your links.
+```
+docker run --rm -it -p 4000:4000 -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
+```
 
-* `_includes/custom-icon-links.html`- Additional icon links to insert at the
-  end of the icon links at the bottom of the sidebar. You can use the `order`
-  property to re-order.
+Run using Docker with Docker Compose:
+```
+docker-compose up
+```
 
-* `_includes/favicons.html` - Replace references to `favicon.ico` and
-  `favicon.png` with your own favicons references.
+## OSS used in { Personal }
 
-* `_includes/font-includes.html` - The Abril Fatface font used for the site
-  title is loaded here. If you're overriding that font in the CSS, be sure
-  to also remove the font load reference here.
+One of the reasons { Personal } is real is the following OSS projects:
 
-### New Features
+  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+  2. [hammer.js](https://hammerjs.github.io/)
+  3. [highlightjs](https://highlightjs.org/)
+  4. [RRSSB](https://github.com/kni-labs/rrssb)
+  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+  6. [typed.js](https://github.com/mattboldt/typed.js/)
 
-* Hydeout adds a new tags page (accessible in the sidebar). Just create a
-  new page with the tags layout:
-
-  ```
-  ---
-  layout: tags
-  title: Tags
-  ---
-  ```
-
-* Hydeout adds a new "category" layout for dedicated category pages.
-  Category pages are automatically added to the sidebar. All other pages
-  must have `sidebar_link: true` in their front matter to show up in
-  the sidebar. To create a category page, use the `category` layout"
-
-  ```
-  ---
-  layout: category
-  title: My Category
-  ---
-
-  Description of "My Category"
-  ```
-
-* You can control how pages are sorted by using the `sidebar_sort_order`
-  parameter in the front matter. This works for both category and non-category
-  pages, although non-category pages will always come first. Take a look at
-  [`_includes/sidebar-nav-links.html`](./_includes/sidebar-nav-links.html) if
-  you want to customize this behavior.
-
-  ```
-  ---
-  layout: page
-  title: My page
-  sidebar_sort_order: 123
-  ---
-
-  Some content.
-  ```
-
-* A simple redirect-to-Google search is available. Just create a page with
-  the `search` layout.
-
-  ```
-  ---
-  layout: search
-  title: Google Search
-  ---
-  ```
-
-* Disqus integration is ready out of the box. Just add the following to
-  your config file:
-
-  ```yaml
-  disqus:
-    shortname: my-disqus-shortname
-  ```
-
-  If you don't want Disqus or want to use something else, override
-  `comments.html`.
-
-* For Google Analytics support, define a `google_analytics` variable with
-  your property ID in your config file.
-
-There's also a bunch of minor tweaks and adjustments throughout the
-theme. Hope this works for you!
+<div style="font-size:16px;margin:0 auto;width:300px">
+    <a href="https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi">
+        <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
+    </a>
+</div>

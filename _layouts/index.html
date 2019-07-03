@@ -1,42 +1,30 @@
----
-layout: default
----
 
-<div class="content">
-  {% include pagination-newer.html %}
+<!-- Index Layout Start -->
 
-  {{ content }}
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
 
-  {% for post in paginator.posts %}
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    {% include post-meta.html post=post %}
+  {% include head.html %}
 
-    {% if post.excerpt %}
-      {{ post.excerpt }}
-    {% else %}
-      {{ post.content }}
-    {% endif %}
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
 
-    {% if post.excerpt %}
-      {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-      {% capture content_words %}
-        {{ post.content | number_of_words }}
-      {% endcapture %}
-      {% capture excerpt_words %}
-        {{ post.excerpt | number_of_words }}
-      {% endcapture %}
+    {% include navigation.html %}
 
-      {% if content_words != excerpt_words %}
-        <a href="{{ post.url | relative_url }}">More &hellip;</a>
-      {% endif %}
-    {% endif %}
-  </article>
-  {% endfor %}
+    {% include header.html %}
 
-  {% include pagination-older.html %}
-</div>
+    {% for p in site.pages_list %}
+      {% for page in site.pages %}
+        {% if p[1] == page.section-type %}
+          {% include {{ page.path }} %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Index Layout End -->
