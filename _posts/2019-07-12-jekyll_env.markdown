@@ -1,6 +1,6 @@
 ---
-layout: post
-section-type: post
+layout: null
+section-type: 
 title: jekyll的修炼-环境搭建（一）
 category: tech
 tags: [ 'tutorial' ]
@@ -20,6 +20,7 @@ tags: [ 'tutorial' ]
 2. 可以发布到Github Page
 3. 希望可以在windows环境下操作
 4. 能偷懒就偷懒的本质思想 (。-ω-)zzz
+5. 本人是非程序猿的业余玩家，不指望能打职业联赛
 
 
 经过一番Google，得出了如下解决思路：
