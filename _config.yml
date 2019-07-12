@@ -16,7 +16,7 @@ google-tracking-id: ""
 # https
 force-https: True
 # disqus评论
-disqus-shortname: "personal-jekyll-theme"
+# disqus-shortname: "personal-jekyll-theme"
 
 
 ################
@@ -50,8 +50,7 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "千里之行，始于足下"
-  - text: "勿以恶小而为之，勿以善小而不为"
-  - text: "test"
+  - text: "一个男人的背影能有多帅"
 
 
 
@@ -61,7 +60,7 @@ lines: # You can add HTML Tags in the Text
 
 events:
   - image: "/img/timeline/baracktocat.jpg"
-    date: "2019-07-04"
+    date: "2019-07-12"
     description: "解锁成就：创建小红帽博客"
 
 # 时间轴开始图片
@@ -85,33 +84,3 @@ paginate_path: "blog/page:num/"
 # 语法高亮
 syntax-highlight: True
 
-
-
-# title: Your awesome title
-# email: your-email@example.com
-# description: >- # this means to ignore newlines until "baseurl:"
-#  Write an awesome description for your new site here. You can edit this
-#  line in _config.yml. It will appear in your document head meta (for
-#  Google search results) and in your feed.xml site description.
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
-
-# Build settings
-#markdown: kramdown
-#theme: minima
-#plugins:
-#  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
