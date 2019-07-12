@@ -74,7 +74,7 @@ timeline-img: "/img/timeline/default.png"
 
 enable-gesture-navigation: True
 # 可预览的博客数
-post-preview-words: 90
+post-preview-words: 10
 # 每页显示的博客数
 paginate: 10
 # 文章首页
