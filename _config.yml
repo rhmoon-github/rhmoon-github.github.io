@@ -84,3 +84,9 @@ paginate_path: "blog/page:num/"
 # 语法高亮
 syntax-highlight: True
 
+################
+# 作者简介 #
+################
+
+author_blurb: "如有不对，欢迎留言指正。虽然不懂前端技术，但不妨碍经营好小红帽的博客。"
+author_blurb_image: "/img/author.png"
