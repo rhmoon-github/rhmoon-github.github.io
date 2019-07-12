@@ -1,10 +1,11 @@
-
 ---
 layout: post
-title:  "jekyll的修炼-搭建环境（一）"
-date:   2019-07-02 11:53:09 +0800
-categories: jekyll update
+section-type: post
+title: jekyll的修炼-环境搭建（一）
+category: tech
+tags: [ 'tutorial' ]
 ---
+
 # 写在前面的话 #
 
 本文主要参考如下：
@@ -17,8 +18,8 @@ categories: jekyll update
 
 1. 可以在本地调试、预览
 2. 可以发布到Github Page
-3. 能偷懒就偷懒的本质思想 (。-ω-)zzz
-4. 希望可以在windows环境下使用的
+3. 希望可以在windows环境下操作
+4. 能偷懒就偷懒的本质思想 (。-ω-)zzz
 
 
 经过一番Google，得出了如下解决思路：
