@@ -1,21 +1,28 @@
-// Variables
 
-// Main color
-$primary-color: #000;
+// 主体颜色
+$primary-color: #fff;
+$primary-color-black: #000;
 
-// Anchor color
-$secondary-color: #00cdff;
+// 特殊颜色
+$secondary-color: #0088A8;
 
-// Font color
-$font-color: #fff;
+// 字体颜色
+$font-color: #000;
+$font-color-white: #fff;
 
-$navbar-text-shadow: true;
-$header-text-shadow: true;
-$header-background-color: $primary-color;
-$intro-text-color: $font-color;
-$navbar-color: $font-color;
+// 滚动字幕阴影
+$navbar-text-shadow: false;
+// 首菜单阴影
+$header-text-shadow: false;
+// 首菜单背景颜色
+$header-background-color: #696969;
+// 滚动字幕字体颜色
+$intro-text-color: $font-color-white;
+// 首菜单字体颜色
+$navbar-color: $font-color-white;
+// 首菜单下滑时背景颜色
 $navbar-lg-collapse-background-color: $header-background-color;
 $navbar-lg-background: transparent;
 $navbar-sm-background-color: $navbar-lg-collapse-background-color;
-
+// 按钮链接颜色
 $social-buttons-color: $secondary-color;

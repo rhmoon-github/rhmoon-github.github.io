@@ -1,24 +1,46 @@
+<!-- 分页链接 -->
+<ul class="pagination">
+	<!-- 首页 -->
+	<li><a href="{{site.url}}{{site.paginate_base_path}}"><span>首页</span></a></li>
+    	<!-- 前一页 -->
+	<li>
+		{% if paginator.page == 1 %}
+			<li class="disabled"><span>&laquo;</span></li>
+		{% else %}
+			<a href="{{site.baseurl}}{{paginator.previous_page_path}}"><span>&laquo;</span></a>
+		{% endif %}
+	</li>
+	
+	<li>
+	<!-- 按页面数字跳转 -->
+	{% for i in (1..paginator.total_pages) limit: offset: %}
+	
+			{% if {{i}} == 1 %}
+				<a href="{{site.url}}{{site.paginate_base_path}}">{{i}}</a>
+			{% else %}
+				<a href="{{site.url}}{{site.paginate_base_path}}/page{{i}}">{{i}}</a>
+			{% endif %}
 
-<!-- Pagination Links Start -->
-
-<div class="pagination">
-
-  <h4>
-
-  {% if paginator.previous_page %}
-    <a href="{{site.baseurl}}{{paginator.previous_page_path}}" class="previous">Newer Posts</a>
-  {% endif %}
-
-  {% if paginator.previous_page and paginator.next_page %}
-    |
-  {% endif %}
-
-  {% if paginator.next_page %}
-    <a href="{{site.baseurl}}{{paginator.next_page_path}}" class="next">Older Posts</a>
-  {% endif %}
-
-  </h4>
-
-</div>
-
-<!-- Pagination Links End -->
+	{% endfor %}
+	<!-- 当文章数量增多时候，这里应该实现...的分页功能
+		{% if {{paginator.total_pages}} > {{limit_num}} %}
+			<a href="{{site.url}}{{site.paginate_base_path}}">...</a>
+		{% endif %}
+		
+		</li>
+	-->
+	<!-- 后一页 -->
+	<li>
+		{% if paginator.page == paginator.total_pages %}
+			<li class="disabled"><span>&raquo;</span></li>
+		{% else %}
+			<a href="{{site.baseurl}}{{paginator.next_page_path}}"><span>&raquo;</span></a>
+		{% endif %}
+	</li>
+	<!-- 尾页 -->
+	<li><a href="{{site.url}}{{site.paginate_base_path}}/page{{paginator.total_pages}}"><span>尾页</span></a></li>
+	<!-- 总页数 -->
+	<li class="disabled">
+        	<span>第{{paginator.page}}页 / 共{{paginator.total_pages}}页</span>
+    	</li>
+</ul>
