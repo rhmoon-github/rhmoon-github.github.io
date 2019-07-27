@@ -1,92 +1,92 @@
-#############
-# 基础设置 #
-#############
+###############
+# 基础设置
+###############
 
-url: "https://rhmoon-github.github.io"
-baseurl: ""
-lang: "zh"
-author: "rhmoon"
-title: "rhmoon's blogs"
-description: "小红帽的博客"
-keywords: "rh"
-favicon: "/img/favicon.ico"
+title: rhmoon
+SEOTitle: 小红帽的博客 | rhmoon's blog
+header-img: img/home-images/home-bg.jpg
+# email: qiubaiying@gmail.com
+description: "Every failure is leading towards success."
+keyword: "rhmoon"
+url: "https://rhmoon-github.github.io/"
+baseurl: ""      
+github_repo: "https://github.com/rhmoon-github/rhmoon-github.github.io" 
 
-# 谷歌分析
-google-tracking-id: ""
-# https
-force-https: True
-# disqus评论
-# disqus-shortname: "personal-jekyll-theme"
-
-
-################
-# 首页 #
-################
-
-# 首页菜单左侧小图标 #
-black-favicon: "/img/black-lab-glass.ico"
-# 首页背景图 #
-background-img: "../img/intro-bg.jpg"
-# 首页头像 #
-me-img: "/img/jetpacktocat.png"
-# 首菜单栏索引
-pages_list:
-  关于: 'about'
-  文章: 'latest-post'
-  时间轴: 'timeline'
-  社交: 'contact'
-
-
-##############################
-# 首页滚动字幕 #
-##############################
-
-dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
-start-delay: 200
-delete-delay: 5000
-lines: # You can add HTML Tags in the Text
-  - text: "千里之行，始于足下"
-  - text: "一个男人的背影能有多帅"
-
+############
+# 侧边栏设置
+############
+sidebar: true
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/home-images/rhmoon.png
 
 
 ############
-# 时间轴 #
+# 社交账号
 ############
-
-events:
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "2019-07-12"
-    description: "解锁成就：创建小红帽博客"
-
-# 时间轴开始图片
-
-timeline-img: "/img/timeline/default.png"
+# SNS settings
+RSS: false
+weibo_username:     
+zhihu_username:     
+github_username:    rhmoon-github
+jianshu_username:   
 
 
-########
-# 博客 #
-########
 
-enable-gesture-navigation: True
-# 可预览的博客数
-post-preview-words: 10
-# 每页显示的博客数
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
 paginate: 10
-# 文章首页
-paginate_base_path: "/blog"
-# 分页路径
-paginate_path: "blog/page:num/"
-# 语法高亮
-syntax-highlight: True
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-################
-# 作者简介 #
-################
 
-author_blurb: "如有不对，欢迎留言指正。虽然不懂前端技术，但不妨碍经营好小红帽的博客。"
-author_blurb_image: "/img/author.png"
+
+###############
+# Markdown设置
+###############
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  repo: qiubaiying.github.io    #仓库名称
+  owner: qiubaiying    #github用户名
+  admin: qiubaiying
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+#ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+#ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
