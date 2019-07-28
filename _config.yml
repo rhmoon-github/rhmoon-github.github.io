@@ -1,63 +1,50 @@
 ###############
 # 基础设置
 ###############
-
-title: rhmoon
-SEOTitle: 小红帽的博客 | rhmoon's blog
-header-img: img/home-images/home-bg.jpg
-# email: qiubaiying@gmail.com
-description: "Every failure is leading towards success."
-keyword: "rhmoon"
-url: "https://rhmoon-github.github.io/"
+title: rhmoon                                                                   #home页标题
+SEOTitle: 小红帽的博客 | rhmoon's blog                                          #home页title
+header-img: img/home-images/home-bg-1.jpg                                       #home页背景图
+# email: rhmoon@yeah.com                                                        #你的邮箱
+description: "for time in mylife ; do learn compress and share ; done"          #你的座右铭
+keyword: "rhmoon"                                                               
+url: "https://rhmoon-github.github.io/"                                         #你的GitHub Pages地址
 baseurl: ""      
-github_repo: "https://github.com/rhmoon-github/rhmoon-github.github.io" 
+github_repo: "https://github.com/rhmoon-github/rhmoon-github.github.io"         #你的GitHub仓库地址
 
 ############
 # 侧边栏设置
 ############
-sidebar: true
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/home-images/rhmoon.png
-
+sidebar: true                                                                   #是否开启侧边栏
+sidebar-about-description: "小了红了帽"                                         #侧边栏描述
+sidebar-avatar: /img/home-images/rhmoon.png                                     #侧边栏显示头像
 
 ############
 # 社交账号
 ############
 # SNS settings
 RSS: false
-weibo_username:     
-zhihu_username:     
-github_username:    rhmoon-github
-jianshu_username:   
-
-
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
+weibo_username:                                                                  #微博
+zhihu_username:                                                                  #知乎
+github_username:    rhmoon-github                                                #GitHub
+jianshu_username:                                                                #简书
 
 ###############
 # Markdown设置
 ###############
-markdown: kramdown
-highlighter: rouge
+markdown: kramdown                                                               # Github推荐使用kramdown作为markdown解析
+highlighter: rouge                                                               # 语法高亮
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM
 
 
-
-# 评论系统
+###############
+# Disqus评论
+###############
 # Disqus（https://disqus.com/）
 # disqus_username: qiubaiying
 
 ###############
-# Gitalk设置
+# Gitalk评论
 ###############
 gitalk:
   enable: true                                              #是否开启Gitalk评论
@@ -68,6 +55,19 @@ gitalk:
   admin: rhmoon-github
   distractionFreeMode: true                                 #是否启用类似FB的阴影遮罩
 
+###############
+# 标签设置
+###############
+featured-tags: true                                         # 是否使用首页标签
+featured-condition-size: 0                                  # 相同标签数量大于这个数，才会出现在首页
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 # 统计
 
@@ -78,14 +78,6 @@ gitalk:
 # Google Analytics
 #ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
 #ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
-
-
-
-
-# Featured Tags
-featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 
 

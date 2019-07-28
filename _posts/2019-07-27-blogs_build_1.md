@@ -153,7 +153,7 @@ Windows可以从（[https://rubyinstaller.org/downloads/](https://rubyinstaller.
 
 - 可以从 [jekyll主题网站](http://jekyllthemes.org/) 下载自己喜欢的主题。
 <br/>
-- 也可以在GitHub上直接 `fork` 优秀的jekyll主题。当前使用的主题就是源于（https://qiubaiying.github.io/）
+- 也可以在GitHub上直接 `fork` 优秀的jekyll主题。当前使用的主题就是源于[https://qiubaiying.github.io/ ](https://qiubaiying.github.io/ )
 
 总之寻找自己中意的博客模板的过程不再赘述。直接进入博客模板改造阶段。
 

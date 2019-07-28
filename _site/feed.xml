@@ -2,12 +2,83 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rhmoon</title>
-    <description>Every failure is leading towards success.</description>
+    <description>for time in mylife ; do learn compress and share ; done</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 27 Jul 2019 23:04:24 +0800</pubDate>
-    <lastBuildDate>Sat, 27 Jul 2019 23:04:24 +0800</lastBuildDate>
+    <pubDate>Sun, 28 Jul 2019 11:55:37 +0800</pubDate>
+    <lastBuildDate>Sun, 28 Jul 2019 11:55:37 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【博客建设】一、大改造：个性化设置博客模板</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;经过上一篇文章的介绍，现在已经搭建好了本地环境。接下来就要对博客模板进行个性化设置，我使用的博客模板源于&lt;a href=&quot;https://qiubaiying.github.io/&quot;&gt;https://qiubaiying.github.io/ &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;概述&quot;&gt;概述&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;关键词：jekyll、GitHub Pages&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;目标导向&quot;&gt;目标导向&lt;/h3&gt;
+
+&lt;p&gt;我们可以修改的基本内容包括&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;博客页面中可见的文字&lt;/li&gt;
+  &lt;li&gt;博客页面中的背景图片&lt;/li&gt;
+  &lt;li&gt;现阶段就不指望自己能修改代码了 (￣ェ￣;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;我们完成大改造过程大概需要如下几个步骤&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;必要的知识储备&lt;/li&gt;
+  &lt;li&gt;阅读模块模板说明&lt;/li&gt;
+  &lt;li&gt;修改_config.yml配置文件&lt;/li&gt;
+  &lt;li&gt;修改必要的html文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1必要的知识储备&quot;&gt;1.必要的知识储备&lt;/h3&gt;
+&lt;p&gt;改造前一定要对jekyll有一个大概的了解，我对于jekyll的知识储备大多来源于&lt;a href=&quot;http://jekyllcn.com/&quot;&gt;jekyll中文网站&lt;/a&gt;里的文章。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在&lt;a href=&quot;http://jekyllcn.com/docs/structure/&quot;&gt;目录结构&lt;/a&gt;章节，详细叙述了jekyll建立的工作目录的结构及其作用。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2阅读模块模板说明&quot;&gt;2.阅读模块模板说明&lt;/h3&gt;
+
+&lt;p&gt;博客模板说明（README.md文件）中也详细记录了改造方法，这是改造过程的主要参考。&lt;/p&gt;
+
+&lt;h3 id=&quot;3修改_configyml配置文件&quot;&gt;3.修改_config.yml配置文件&lt;/h3&gt;
+
+&lt;p&gt;通过目录结构的了解，我们知道了_config.yml是主要的配置文件。本博客已经将_config.yml文件重新排版并注释，有兴趣的同学可以直接下载本博客的_config.yml文件，阅读设置项。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;在这篇文章中，我们总结如下&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;搭建了本地博客环境&lt;/li&gt;
+  &lt;li&gt;学习了使用Github Desktop工具将博客发布到GitHub Pages&lt;/li&gt;
+  &lt;li&gt;寻找并开始改造博客模板&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;搭建好了本地环境后，就可以在发布文章前，做本地预览、调试。Github Desktop工具可以很方便的将调试好的博客发布到GitHub Pages上，供更多人浏览。最后，就要根据个人需求，对博客进行改造了。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B&quot;&gt;博客搭建详细教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 28 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/28/blogs_build_2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/28/blogs_build_2/</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
     
       <item>
         <title>【博客建设】一、初窥门径：本地环境搭建</title>
@@ -198,7 +269,7 @@
 &lt;ul&gt;
   &lt;li&gt;可以从 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll主题网站&lt;/a&gt; 下载自己喜欢的主题。
 &lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;也可以在GitHub上直接 &lt;code class=&quot;highlighter-rouge&quot;&gt;fork&lt;/code&gt; 优秀的jekyll主题。当前使用的主题就是源于（https://qiubaiying.github.io/）&lt;/li&gt;
+  &lt;li&gt;也可以在GitHub上直接 &lt;code class=&quot;highlighter-rouge&quot;&gt;fork&lt;/code&gt; 优秀的jekyll主题。当前使用的主题就是源于&lt;a href=&quot;https://qiubaiying.github.io/&quot;&gt;https://qiubaiying.github.io/ &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;总之寻找自己中意的博客模板的过程不再赘述。直接进入博客模板改造阶段。&lt;/p&gt;
