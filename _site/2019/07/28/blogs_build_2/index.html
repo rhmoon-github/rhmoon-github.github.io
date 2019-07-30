@@ -10,7 +10,7 @@
     <meta name="keywords"  content="rhmoon">
     <meta name="theme-color" content="#000000">
     
-    <title>【博客建设】一、大改造：个性化设置博客模板 - 小红帽的博客 | rhmoon's blog</title>
+    <title>【博客建设】二、个性化设置博客模板 - 小红帽的博客 | rhmoon's blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -176,7 +176,7 @@
                         <a class="tag" href="/tags/#blog" title="blog">blog</a>
                         
                     </div>
-                    <h1>【博客建设】一、大改造：个性化设置博客模板</h1>
+                    <h1>【博客建设】二、个性化设置博客模板</h1>
                     
                     
                     <h2 class="subheading">初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。</h2>
@@ -224,6 +224,7 @@
   <li>阅读模块模板说明</li>
   <li>修改_config.yml配置文件</li>
   <li>修改必要的html文件</li>
+  <li>额外添加Gemfile文件</li>
 </ol>
 
 <h3 id="1必要的知识储备">1.必要的知识储备</h3>
@@ -235,179 +236,28 @@
 
 <h3 id="2阅读模块模板说明">2.阅读模块模板说明</h3>
 
-<ul>
-  <li>Windows可以从（<a href="https://rubyinstaller.org/downloads/">https://rubyinstaller.org/downloads/</a>）下载Ruby安装包</li>
-</ul>
+<p>博客模板说明（README.md文件）中也详细记录了改造方法，这是改造过程的主要参考。</p>
 
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/2.png" alt="2" /></p>
+<h3 id="3修改_configyml配置文件">3.修改_config.yml配置文件</h3>
 
-<ul>
-  <li>双击运行安装程序（rubyinstaller-devkit-2.6.3-1-x64.exe）</li>
-</ul>
+<p>通过目录结构的了解，我们知道了_config.yml是主要的配置文件。本博客已经将_config.yml文件重新排版并注释，有兴趣的同学可以直接下载本博客的 <code class="highlighter-rouge">_config.yml</code> 文件，阅读设置项。</p>
 
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/3.png" alt="3" /></p>
+<h3 id="4修改必要的html文件">4.修改必要的html文件</h3>
+<p>必要的html文件例如：根目录下的index.html、about.html、404.html等文件，这些文件也同样包含一些可以修改的个人信息。</p>
 
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/4.png" alt="4" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/5.png" alt="5" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/6.png" alt="6" /></p>
-
-<ul>
-  <li>运行Ruby，使用 <code class="highlighter-rouge">ruby -v</code> 可以查询ruby的版本信息</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/7.png" alt="7" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/8.png" alt="8" /></p>
-
-<h3 id="2下载rubygems">2.下载RubyGems</h3>
-
-<p>Windows可以从（<a href="https://rubyinstaller.org/downloads/">https://rubyinstaller.org/downloads/</a>）下载RubyGems安装包</p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/9.png" alt="9" /></p>
-
-<ul>
-  <li>将安装包解压到指定目录，在解压目录下打开cmd，并运行 <code class="highlighter-rouge">ruby setup.rb</code></li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/10.png" alt="10" /></p>
-
-<ul>
-  <li>安装完成后，使用 <code class="highlighter-rouge">gem -v</code> 可以查询rubygem的版本信息</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/11.png" alt="11" /></p>
-
-<h3 id="3下载jekyll和bundler">3.下载Jekyll和bundler</h3>
-
-<ul>
-  <li>在cmd中使用 <code class="highlighter-rouge">gem install jekyll</code> 和 <code class="highlighter-rouge">gem install bundler</code> 下载jekyll和bundler</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/12.png" alt="12" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/13.png" alt="13" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/14.png" alt="14" /></p>
-
-<p>至此，环境准备工作就绪，接下来就可以使用jekyll生成一个简单的博客页面了。</p>
-
-<h3 id="4使用jekyll创建博客">4.使用Jekyll创建博客</h3>
-
-<ul>
-  <li>使用管理员身份，在指定目录下打开cmd，使用 <code class="highlighter-rouge">jekyll new directory</code> 建立Jekyll工作目录。</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/15.png" alt="15" /></p>
-
-<ul>
-  <li>使用管理员身份，在新建的Jekyll目录中执行 <code class="highlighter-rouge">bundle install</code></li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/16.png" alt="16" /></p>
-
-<ul>
-  <li>使用管理员身份，在新建的Jekyll目录中执行 <code class="highlighter-rouge">bundle exec jekyll server</code> 启动服务。</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/17.png" alt="17" /></p>
-
-<h3 id="5本地调试博客">5.本地调试博客</h3>
-
-<ul>
-  <li>在浏览器中访问本地（<a href="http://localhost:4000">http://localhost:4000</a>）就可以看到Jekyll创建的博客页面了。</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/18.png" alt="18" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/19.png" alt="19" /></p>
-
-<ul>
-  <li>万里长征第一步算是完成了。接下来我们要将这个简单的博客页面发布到github page上。</li>
-</ul>
-
-<h3 id="6创建github-pages">6.创建GitHub Pages</h3>
-
-<ul>
-  <li>首先需要有一个GitHub账号，这里就不讲解如果申请注册了。经过了一番操作，你有了一个GitHub账号。</li>
-  <li>创建一个叫 <code class="highlighter-rouge">username.github.io</code> 的仓库。其中username是你的GitHub的用户名。</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/20.png" alt="20" /></p>
-
-<ul>
-  <li>点击 <code class="highlighter-rouge">setting</code>，在GitHub Pages中点击 <code class="highlighter-rouge">Choose a theme</code>，选择一个主题。</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/21.png" alt="21" /></p>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/22.png" alt="22" /></p>
-
-<ul>
-  <li>选择完主题后，就可以访问（<a href="http://username.github.io">http://username.github.io</a>）了</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/23.png" alt="23" /></p>
-
-<h3 id="7使用github-desktop管理github">7.使用Github Desktop管理Github</h3>
-
-<ul>
-  <li>
-    <p>下载并使用Github Desktop来管理 <code class="highlighter-rouge">username.github.io</code> 仓库（<a href="https://desktop.github.com/">https://desktop.github.com/</a>）</p>
-  </li>
-  <li>
-    <p>将 <code class="highlighter-rouge">username.github.io</code> 仓库下载到本地，并将本地Jekyll工作目录中的文件全部拷贝至本地 <code class="highlighter-rouge">username.github.io</code> 仓库目录中。</p>
-  </li>
-  <li>
-    <p>在Github Desktop中点击 <code class="highlighter-rouge">Commit to master</code>，然后点击 <code class="highlighter-rouge">Fetch origin</code></p>
-  </li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/24.png" alt="24" /></p>
-
-<ul>
-  <li>此时访问（<a href="http://username.github.io">http://username.github.io</a>），就可以看到本地的Jekyll创建的博客页面，发布到了Github Pages上。</li>
-</ul>
-
-<p><img src="http://localhost:4000/img/post-images/2019-07-27-blogs_build_1/25.png" alt="25" /></p>
-
-<ul>
-  <li>至此，完成了万里长征的第二步，我们可以使用Jekyll在本地生成一个博客页面，并在本地调试新建的博客页面，最后通过Github Desktop工具，将本地的博客页面发布到Github Pages上。</li>
-</ul>
-
-<h3 id="8寻找下载博客模板">8.寻找下载博客模板</h3>
-
-<ul>
-  <li>可以从 <a href="http://jekyllthemes.org/">jekyll主题网站</a> 下载自己喜欢的主题。
-<br /></li>
-  <li>也可以在GitHub上直接 <code class="highlighter-rouge">fork</code> 优秀的jekyll主题。当前使用的主题就是源于（https://qiubaiying.github.io/）</li>
-</ul>
-
-<p>总之寻找自己中意的博客模板的过程不再赘述。直接进入博客模板改造阶段。</p>
-
-<h3 id="9本地调试博客模板">9.本地调试博客模板</h3>
-
-<blockquote>
-  <p>不同的博客模板发布的时候都会有对应的使用说明。</p>
-</blockquote>
-
-<p>在下一篇文章中将详细说明对当前使用主题的改造过程。</p>
-
-<h3 id="10-正式发布">10. 正式发布</h3>
-
-<p>同样还是使用Github Desktop发布已经改造好的博客。过程同7章节，这里不再赘述。</p>
+<h3 id="5额外添加gemfile文件">5.额外添加Gemfile文件</h3>
+<p><code class="highlighter-rouge">Gemfile</code> 文件,在博客模板中没有包含该文件。我将 <code class="highlighter-rouge">_config.yml</code> 文件中有关Gem的设置移到了这里。</p>
 
 <h2 id="总结">总结</h2>
 
 <p>在这篇文章中，我们总结如下</p>
 <ol>
-  <li>搭建了本地博客环境</li>
-  <li>学习了使用Github Desktop工具将博客发布到GitHub Pages</li>
-  <li>寻找并开始改造博客模板</li>
+  <li>修改<code class="highlighter-rouge">_config.yml</code> 配置文件</li>
+  <li>修改必要的html文件</li>
+  <li>额外添加Gemfile文件</li>
 </ol>
 
-<p>搭建好了本地环境后，就可以在发布文章前，做本地预览、调试。Github Desktop工具可以很方便的将调试好的博客发布到GitHub Pages上，供更多人浏览。最后，就要根据个人需求，对博客进行改造了。</p>
+<p>由于更多经验在博客模板说明中已经写的较为详细了，该文章较为简略。接下来就能开始愉快的写博客了。</p>
 
 <h2 id="参考">参考</h2>
 
@@ -422,12 +272,19 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2019/07/27/blogs_build_1/" data-toggle="tooltip" data-placement="top" title="【博客建设】一、初窥门径：本地环境搭建">
+                        <a href="/2019/07/27/blogs_build_1/" data-toggle="tooltip" data-placement="top" title="【博客建设】一、本地环境搭建">
                         Previous<br>
-                        <span>【博客建设】一、初窥门径：本地环境搭建</span>
+                        <span>【博客建设】一、本地环境搭建</span>
                         </a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/2019/07/28/blogs_build_CNAME/" data-toggle="tooltip" data-placement="top" title="【博客建设】三、绑定域名">
+                        Next<br>
+                        <span>【博客建设】三、绑定域名</span>
+                        </a>
+                    </li>
                     
                 </ul>
 
@@ -491,7 +348,7 @@
                     <div class="tags">
         				
                             
-                				<a href="/tags/#blog" title="blog" rel="2">
+                				<a href="/tags/#blog" title="blog" rel="3">
                                     blog
                                 </a>
                             

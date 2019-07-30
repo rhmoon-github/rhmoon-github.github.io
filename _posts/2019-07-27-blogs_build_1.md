@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      【博客建设】一、初窥门径：本地环境搭建
+title:      【博客建设】一、本地环境搭建
 subtitle:   初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。
 date:       2019-07-27
 author:     rhmoon

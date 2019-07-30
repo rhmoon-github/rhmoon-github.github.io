@@ -10,7 +10,7 @@
     <meta name="keywords"  content="rhmoon">
     <meta name="theme-color" content="#000000">
     
-    <title>小红帽的博客 | rhmoon's blog</title>
+    <title>【博客建设】三、绑定域名 - 小红帽的博客 | rhmoon's blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/2019/07/28/blogs_build_CNAME/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -152,230 +152,241 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-images/home-bg-1.jpg')">
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-images/2019-07-30-blogs_build_CNAME/0.png" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-images/2019-07-30-blogs_build_CNAME/0.png')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>rhmoon</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">不积跬步，无以至千里；不积小流，无以成江海。</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#blog" title="blog">blog</a>
+                        
+                    </div>
+                    <h1>【博客建设】三、绑定域名</h1>
+                    
+                    
+                    <h2 class="subheading">初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。</h2>
+                    
+                    <span class="meta">Posted by rhmoon on July 28, 2019</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h2 id="前言">前言</h2>
+
+<p>经过上一篇文章的介绍，我们已经搭建好了自己的博客。下面我们要给博客绑定一个域名。</p>
+
+<h2 id="概述">概述</h2>
+
+<blockquote>
+  <p>关键词：jekyll、GitHub Pages、域名</p>
+</blockquote>
+
+<h3 id="目标导向">目标导向</h3>
+
+<p>博客绑定域名需要如下几个步骤</p>
+<ol>
+  <li>购买域名</li>
+  <li>域名解析</li>
+  <li>修改GitHub中博客的CNAME文件</li>
+</ol>
+
+<h3 id="1购买域名">1.购买域名</h3>
+
+<p>我是在<a href="https://wanwang.aliyun.com/domain/?spm=5176.8006371.1007.dnetcndomain.q1ys4x">阿里云</a>购买的域名，购买过程就是淘宝过程…</p>
+
+<h3 id="2域名解析">2.域名解析</h3>
+
+<p>阿里云在使用域名解析的时候，会要求实名认证。</p>
+
+<p><img src="http://localhost:4000/img/post-images/2019-07-30-blogs_build_CNAME/1.png" alt="1" /></p>
+
+<p>在解析配置中，添加记录。</p>
+
+<ul>
+  <li>记录类型：CNAME</li>
+  <li>主机记录：www</li>
+  <li>解析路径：默认</li>
+  <li>记录值：你的Github page地址</li>
+  <li>TTL：默认</li>
+</ul>
+
+<p><img src="http://localhost:4000/img/post-images/2019-07-30-blogs_build_CNAME/2.png" alt="2" /></p>
+
+<p><img src="http://localhost:4000/img/post-images/2019-07-30-blogs_build_CNAME/3.png" alt="3" /></p>
+
+<h3 id="3修改github中博客的cname文件">3.修改GitHub中博客的CNAME文件</h3>
+
+<p>如果GitHub中博客没有CNAME文件，则需要新建该文件，内容修改为域名地址。</p>
+
+<h2 id="总结">总结</h2>
+
+<p>在这篇文章中，我们实现了博客的域名绑定，接下来就可以通过域名来访问博客了。</p>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+  <li><a href="https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B">博客搭建详细教程</a></li>
+</ul>
+
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/07/28/blogs_build_2/" data-toggle="tooltip" data-placement="top" title="【博客建设】二、个性化设置博客模板">
+                        Previous<br>
+                        <span>【博客建设】二、个性化设置博客模板</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                <!--Gitalk评论start  -->
+                
+                <!-- 引入Gitalk评论插件  -->
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+                <div id="gitalk-container"></div>
+                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
+                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
+                <script src="/js/md5.min.js"></script>
+                <script type="text/javascript">
+                    var gitalk = new Gitalk({
+                    clientID: '10e6a1a702be2240cc76',
+                    clientSecret: 'd24c16617090b8e4e6396a7b55008dd3be934a0f',
+                    repo: 'rhmoon-github.github.io',
+                    owner: 'rhmoon-github',
+                    admin: ['rhmoon-github'],
+                    distractionFreeMode: true,
+                    id: md5(location.pathname),
+                    });
+                    gitalk.render('gitalk-container');
+                </script>
+                
+                <!-- Gitalk end -->
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
         
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                postlist-container
-            ">
-    			
-<div class="post-preview">
-    <a href="/2019/07/28/blogs_build_CNAME/">
-        <h2 class="post-title">
-            【博客建设】三、绑定域名
-        </h2>
-        
-        <h3 class="post-subtitle">
-            初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。
-        </h3>
-        
-        <div class="post-content-preview">
-            前言
-
-经过上一篇文章的介绍，我们已经搭建好了自己的博客。下面我们要给博客绑定一个域名。
-
-概述
-
-
-  关键词：jekyll、GitHub Pages、域名
-
-
-目标导向
-
-博客绑定域名需要如下几个步骤
-
-  购买域名
-  域名解析
-  修改GitHub中博客的CNAME文件
-
-
-1.购买域名
-
-我是在阿里云购买的域名，购买过程就是淘宝过程…
-
-2.域名解析
-
-阿里云在使用域名解析的时候，...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by rhmoon on July 28, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2019/07/28/blogs_build_2/">
-        <h2 class="post-title">
-            【博客建设】二、个性化设置博客模板
-        </h2>
-        
-        <h3 class="post-subtitle">
-            初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。
-        </h3>
-        
-        <div class="post-content-preview">
-            前言
-
-经过上一篇文章的介绍，现在已经搭建好了本地环境。接下来就要对博客模板进行个性化设置，我使用的博客模板源于https://qiubaiying.github.io/ 
-
-概述
-
-
-  关键词：jekyll、GitHub Pages
-
-
-目标导向
-
-我们可以修改的基本内容包括
-
-  博客页面中可见的文字
-  博客页面中的背景图片
-  现阶段就不指望自己能修改代码了 (￣ェ￣;)
-
-
-我们...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by rhmoon on July 28, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2019/07/27/blogs_build_1/">
-        <h2 class="post-title">
-            【博客建设】一、本地环境搭建
-        </h2>
-        
-        <h3 class="post-subtitle">
-            初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。
-        </h3>
-        
-        <div class="post-content-preview">
-            前言
-
-今天正式开启小红帽的博客之旅。
-建设一个博客是一个长期的过程，需要每天投入一些时间、一些耐心，就像侍弄花草般，总有一天它会枝繁叶茂，欣欣向荣。
-
-概述
-
-
-  关键词：jekyll、GitHub Pages
-
-
-目标导向
-
-首先要想清楚我们希望搭建一个怎样的博客
-
-
-  博客的用途主要分享一些技术文章，是技术类的博客
-  常用的操作环境是Windows 7
-  本人既不是程序猿也不是...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by rhmoon on July 27, 2019
-    </p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-
-    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
+        				
                             
-                                <a href="/tags/#blog" title="blog" rel="3">
+                				<a href="/tags/#blog" title="blog" rel="3">
                                     blog
                                 </a>
                             
-                        
-                    </div>
+        				
+        			</div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <a href="/about">
-                                <img src="/img/home-images/rhmoon.png"/>
-                            </a>
-                        
-                        
-                            <p>小了红了帽</p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/rhmoon-github">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                        </ul>
-                        
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 
-    		</div>
-        
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
+        // anchors.options = {
+        //   visible: 'always',
+        //   placement: 'right',
+        //   icon: '#'
+        // };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
     <!-- Footer -->
@@ -510,6 +521,50 @@
 
 
 <!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 

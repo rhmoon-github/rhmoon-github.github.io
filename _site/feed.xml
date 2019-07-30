@@ -5,12 +5,81 @@
     <description>for time in mylife ; do learn compress and share ; done</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Jul 2019 11:55:37 +0800</pubDate>
-    <lastBuildDate>Sun, 28 Jul 2019 11:55:37 +0800</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 13:18:45 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 13:18:45 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>【博客建设】一、大改造：个性化设置博客模板</title>
+        <title>【博客建设】三、绑定域名</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;经过上一篇文章的介绍，我们已经搭建好了自己的博客。下面我们要给博客绑定一个域名。&lt;/p&gt;
+
+&lt;h2 id=&quot;概述&quot;&gt;概述&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;关键词：jekyll、GitHub Pages、域名&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;目标导向&quot;&gt;目标导向&lt;/h3&gt;
+
+&lt;p&gt;博客绑定域名需要如下几个步骤&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;购买域名&lt;/li&gt;
+  &lt;li&gt;域名解析&lt;/li&gt;
+  &lt;li&gt;修改GitHub中博客的CNAME文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1购买域名&quot;&gt;1.购买域名&lt;/h3&gt;
+
+&lt;p&gt;我是在&lt;a href=&quot;https://wanwang.aliyun.com/domain/?spm=5176.8006371.1007.dnetcndomain.q1ys4x&quot;&gt;阿里云&lt;/a&gt;购买的域名，购买过程就是淘宝过程…&lt;/p&gt;
+
+&lt;h3 id=&quot;2域名解析&quot;&gt;2.域名解析&lt;/h3&gt;
+
+&lt;p&gt;阿里云在使用域名解析的时候，会要求实名认证。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-images/2019-07-30-blogs_build_CNAME/1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在解析配置中，添加记录。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;记录类型：CNAME&lt;/li&gt;
+  &lt;li&gt;主机记录：www&lt;/li&gt;
+  &lt;li&gt;解析路径：默认&lt;/li&gt;
+  &lt;li&gt;记录值：你的Github page地址&lt;/li&gt;
+  &lt;li&gt;TTL：默认&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-images/2019-07-30-blogs_build_CNAME/2.png&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-images/2019-07-30-blogs_build_CNAME/3.png&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3修改github中博客的cname文件&quot;&gt;3.修改GitHub中博客的CNAME文件&lt;/h3&gt;
+
+&lt;p&gt;如果GitHub中博客没有CNAME文件，则需要新建该文件，内容修改为域名地址。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;在这篇文章中，我们实现了博客的域名绑定，接下来就可以通过域名来访问博客了。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B&quot;&gt;博客搭建详细教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 28 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/28/blogs_build_CNAME/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/28/blogs_build_CNAME/</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>【博客建设】二、个性化设置博客模板</title>
         <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;经过上一篇文章的介绍，现在已经搭建好了本地环境。接下来就要对博客模板进行个性化设置，我使用的博客模板源于&lt;a href=&quot;https://qiubaiying.github.io/&quot;&gt;https://qiubaiying.github.io/ &lt;/a&gt;&lt;/p&gt;
@@ -36,6 +105,7 @@
   &lt;li&gt;阅读模块模板说明&lt;/li&gt;
   &lt;li&gt;修改_config.yml配置文件&lt;/li&gt;
   &lt;li&gt;修改必要的html文件&lt;/li&gt;
+  &lt;li&gt;额外添加Gemfile文件&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;1必要的知识储备&quot;&gt;1.必要的知识储备&lt;/h3&gt;
@@ -51,18 +121,24 @@
 
 &lt;h3 id=&quot;3修改_configyml配置文件&quot;&gt;3.修改_config.yml配置文件&lt;/h3&gt;
 
-&lt;p&gt;通过目录结构的了解，我们知道了_config.yml是主要的配置文件。本博客已经将_config.yml文件重新排版并注释，有兴趣的同学可以直接下载本博客的_config.yml文件，阅读设置项。&lt;/p&gt;
+&lt;p&gt;通过目录结构的了解，我们知道了_config.yml是主要的配置文件。本博客已经将_config.yml文件重新排版并注释，有兴趣的同学可以直接下载本博客的 &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 文件，阅读设置项。&lt;/p&gt;
+
+&lt;h3 id=&quot;4修改必要的html文件&quot;&gt;4.修改必要的html文件&lt;/h3&gt;
+&lt;p&gt;必要的html文件例如：根目录下的index.html、about.html、404.html等文件，这些文件也同样包含一些可以修改的个人信息。&lt;/p&gt;
+
+&lt;h3 id=&quot;5额外添加gemfile文件&quot;&gt;5.额外添加Gemfile文件&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 文件,在博客模板中没有包含该文件。我将 &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 文件中有关Gem的设置移到了这里。&lt;/p&gt;
 
 &lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
 
 &lt;p&gt;在这篇文章中，我们总结如下&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;搭建了本地博客环境&lt;/li&gt;
-  &lt;li&gt;学习了使用Github Desktop工具将博客发布到GitHub Pages&lt;/li&gt;
-  &lt;li&gt;寻找并开始改造博客模板&lt;/li&gt;
+  &lt;li&gt;修改&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 配置文件&lt;/li&gt;
+  &lt;li&gt;修改必要的html文件&lt;/li&gt;
+  &lt;li&gt;额外添加Gemfile文件&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;搭建好了本地环境后，就可以在发布文章前，做本地预览、调试。Github Desktop工具可以很方便的将调试好的博客发布到GitHub Pages上，供更多人浏览。最后，就要根据个人需求，对博客进行改造了。&lt;/p&gt;
+&lt;p&gt;由于更多经验在博客模板说明中已经写的较为详细了，该文章较为简略。接下来就能开始愉快的写博客了。&lt;/p&gt;
 
 &lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
 
@@ -81,7 +157,7 @@
       </item>
     
       <item>
-        <title>【博客建设】一、初窥门径：本地环境搭建</title>
+        <title>【博客建设】一、本地环境搭建</title>
         <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;今天正式开启小红帽的博客之旅。&lt;br /&gt;
