@@ -3,7 +3,7 @@
 ###############
 title: rhmoon                                                                   #home页标题
 SEOTitle: 小红帽的博客 | rhmoon's blog                                          #home页title
-header-img: img/home-images/home-bg-1.jpg                                       #home页背景图
+header-img: img/home-images/home-bg.jpeg                                        #home页背景图
 # email: rhmoon@yeah.com                                                        #你的邮箱
 description: "for time in mylife ; do learn compress and share ; done"          #你的座右铭
 keyword: "rhmoon"                                                               

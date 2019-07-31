@@ -2,7 +2,7 @@
 layout:     post
 title:      【博客建设】三、绑定域名
 subtitle:   初入博客，满怀欣喜，几经折腾，总结经验。作此篇，与后来者共勉。
-date:       2019-07-28
+date:       2019-07-30
 author:     rhmoon
 header-img: img/post-images/2019-07-30-blogs_build_CNAME/0.png
 catalog: true

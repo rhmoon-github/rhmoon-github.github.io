@@ -5,8 +5,8 @@
     <description>for time in mylife ; do learn compress and share ; done</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Jul 2019 13:18:45 +0800</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 13:18:45 +0800</lastBuildDate>
+    <pubDate>Wed, 31 Jul 2019 10:18:35 +0800</pubDate>
+    <lastBuildDate>Wed, 31 Jul 2019 10:18:35 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -69,9 +69,9 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 28 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/28/blogs_build_CNAME/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/28/blogs_build_CNAME/</guid>
+        <pubDate>Tue, 30 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/30/blogs_build_CNAME/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/30/blogs_build_CNAME/</guid>
         
         <category>blog</category>
         
