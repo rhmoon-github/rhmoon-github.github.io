@@ -7,7 +7,7 @@ author:     rhmoon
 header-img: img/post-images/2019-07-28-blogs_build_2/0.png
 catalog: true
 tags:
-    - blog
+    - Blog
 ---
 
 ## 前言
